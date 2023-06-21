@@ -1,11 +1,11 @@
-import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import React from "react";
+import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 function Footer() {
   return (
     <footer className="bg-gray-200">
       <div className="container mx-auto py-8 flex justify-center items-center">
-        <div className="flex space-x-4">
+        <div className="flex flex-wrap justify-center space-x-4">
           <a
             href="https://www.facebook.com"
             target="_blank"

@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
@@ -22,10 +21,18 @@ const Details = () => {
   };
 
   return (
-    <div className="grid grid-cols-5 gap-3 mt-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 mt-8">
       {drink.map((d) => (
-        <div className="max-w-sm rounded overflow-hidden shadow-lg" key={d.idDrink}>
-          <img src={d.strDrinkThumb} className="rounded-2xl" alt="Drinks" srcSet="" />
+        <div
+          className="max-w-sm rounded overflow-hidden shadow-lg"
+          key={d.idDrink}
+        >
+          <img
+            src={d.strDrinkThumb}
+            className="rounded-2xl"
+            alt="Drinks"
+            srcSet=""
+          />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">{d.idDrink}</div>
             <p className="text-gray-700 text-base">{d.strDrink}</p>
