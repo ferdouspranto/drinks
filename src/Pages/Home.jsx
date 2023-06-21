@@ -25,7 +25,7 @@ function Home() {
     <div className="flex justify-center mt-8">
       <img src={bannermain} alt="Banner" className='rounded-2xl'/>
     </div>
-    <div className="grid grid-cols-3 gap-4 mt-8">
+    <div className="grid grid-cols-3 gap-4 mt-8 ">
       {post.map((d) => {
         return (
           <div class="max-w-sm rounded overflow-hidden shadow-lg">
